@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" ?> 
+
+     <?xml version="1.0" encoding="UTF-8" ?> 
 <Module>
   <ModulePrefs title="Blog Map"
       description="Display blog posts on a map."
@@ -44,7 +45,7 @@
           font-weight: bold;
         }
       </style>
-      <script src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;key=AIzaSyB0gSOcMuy7deyZwhDbncENiTDjgrRPNxU"
+      <script src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;key=ABQIAAAAn138JcpDQexRxBMx-GYAehTZqGWfQErE9pT-IucjscazSdFnjBS4hjjTEOYU89NegWNS5Bv9cZZO8g"
           type="text/javascript"></script>
       <div id="instructions" style="display: none; font-size: 14px;">
         <p>
