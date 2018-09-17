@@ -12,15 +12,16 @@
     </style>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
     <script>
+       var labelSearch;	
 	    
        function getUrlParameter(name) {
           name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
           var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
           var results = regex.exec(location.search);
           return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
-      };
+        };
 	    
-	   alert(getUrlParameter("label")) ;
+        
 	function initialize() {
 	  var myLatlng = new google.maps.LatLng(49.496675,-102.65625);
 	  var mapOptions = {
@@ -28,11 +29,21 @@
 	    center: myLatlng
 	  }
 
-
+          labelSearch = getUrlParameter("label");
 
 	  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 	  var georssLayer = new google.maps.KmlLayer({
-	    url: 'http://www.blogger.com/feeds/6255727982833532507/posts/default/-/Utah?max=400&max-results=400'
+ 	  if (label)
+	      {
+		alert(labelSearch); 
+  	        url: 'http://www.blogger.com/feeds/6255727982833532507/posts/default/-/Utah?max=400&max-results=400'
+	       }
+	  else
+	      {
+  	        url: 'http://www.blogger.com/feeds/6255727982833532507/posts/default/-/Utah?max=400&max-results=400'
+	       }
+		  
+		  
 	  });
 	  georssLayer.setMap(map);
 	}
