@@ -39,14 +39,14 @@
 		if (labelSearch)
 		{
 		   georssLayer = new google.maps.KmlLayer({
-			url: 'http://www.blogger.com/feeds/6255727982833532507/posts/default/-/Utah?max=400&max-results=400'	  		  
+			url: 'http://www.blogger.com/feeds/6255727982833532507/posts/default/-/' +  labelSearch + '?max=400&max-results=400'	  		  
 	 	 	});
 
 		}
 		else
 		{
 			georssLayer = new google.maps.KmlLayer({
-			 url: 'http://www.blogger.com/feeds/6255727982833532507/posts/default/-/Utah?max=400&max-results=400'	  		  
+			 url: 'http://www.blogger.com/feeds/6255727982833532507/posts/default?max=400&max-results=400'	  		  
 	 		 });
 
 		}
