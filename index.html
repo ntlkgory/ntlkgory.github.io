@@ -31,14 +31,14 @@
 
 		var labelSearch;
 		labelSearch = getUrlParameter("label");		  
-		alert(labelSearch);
+	
           
-
   		var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 		var georssLayer;
 		if (labelSearch)
 		{
-		   georssLayer = new google.maps.KmlLayer({
+			alert(labelSearch);			
+		   	georssLayer = new google.maps.KmlLayer({
 			url: 'http://www.blogger.com/feeds/6255727982833532507/posts/default/-/' +  labelSearch + '?max=400&max-results=400'	  		  
 	 	 	});
 
@@ -46,8 +46,8 @@
 		else
 		{
 			georssLayer = new google.maps.KmlLayer({
-			 url: 'http://www.blogger.com/feeds/6255727982833532507/posts/default?max=400&max-results=400'	  		  
-	 		 });
+			url: 'http://www.blogger.com/feeds/6255727982833532507/posts/default?max=400&max-results=400'	  		  
+	 		});
 
 		}
 		
