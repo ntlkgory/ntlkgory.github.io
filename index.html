@@ -12,7 +12,7 @@
     </style>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
     <script>
-       var labelSearch;	
+
 	    
        function getUrlParameter(name) {
           name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
@@ -29,14 +29,14 @@
 	    center: myLatlng
 	  }
 
+	var labelSearch;
+	labelSearch = getUrlParameter("label");		  
+	alert(labelSearch);
           
 
-	  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-	  var georssLayer = new google.maps.KmlLayer({
-	  	var labelSearch;
-               	labelSearch = getUrlParameter("label");		  
-	  	alert(labelSearch);
-	 	if (labelSearch)
+  	var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+  	var georssLayer = new google.maps.KmlLayer({
+		if (labelSearch)
 		{		  
 			alert(labelSearch); 
 			url: 'http://www.blogger.com/feeds/6255727982833532507/posts/default/-/Utah?max=400&max-results=400';
@@ -48,7 +48,7 @@
 		  
 		  
 	  });
-	  georssLayer.setMap(map);
+  	georssLayer.setMap(map);
 	}
 	google.maps.event.addDomListener(window, 'load', initialize);
     </script>
