@@ -30,14 +30,14 @@
 	  	}
 
 		var labelSearch;
-		labelSearch = getUrlParameter("label");		  
+		labelSearch = getUrlParameter("search");		  
 	
           
   		var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 		var georssLayer;
 		if (labelSearch)
 		{
-			alert(labelSearch);			
+			
 		   	georssLayer = new google.maps.KmlLayer({
 			url: 'http://www.blogger.com/feeds/6255727982833532507/posts/default/-/' +  labelSearch + '?max=400&max-results=400'	  		  
 	 	 	});
