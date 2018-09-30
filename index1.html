@@ -1,270 +1,58 @@
-
-
-<script src="https://www.amcharts.com/lib/3/ammap.js" type="text/javascript"></script>
-<script src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js" type="text/javascript"></script>
-<script src="https://www.amcharts.com/lib/3/themes/dark.js" type="text/javascript"></script>
-<br />
-<div id="mapdiv" style="height: 450px; width: 680px;">
-</div>
-<script type="text/javascript">
-var map = AmCharts.makeChart("mapdiv",{
-type: "map",
-theme: "dark",
-projection: "mercator",
-panEventsEnabled : true,
-backgroundColor : "#535364",
-backgroundAlpha : 1,
-zoomControl: {
-zoomControlEnabled : true
-},
-dataProvider : {
-map : "worldHigh",
-getAreasFromMap : true,
-areas :
-[
- {
-  "id": "AT",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/Austria"
- },
- {
-  "id": "BG",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/Bulgaria"
- },
- {
-  "id": "CZ",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/Czech%20Republic"
- },
- {
-  "id": "DE",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/Germany"
- },
- {
-  "id": "GR",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/Greece"
- },
- {
-  "id": "HU",
-  "showAsSelected": true
- },
- {
-  "id": "IT",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/Italy"
- },
- {
-  "id": "MK",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/Macedonia"
- },
- {
-  "id": "PL",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/Polska"
- },
- {
-  "id": "RO",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/Romania"
- },
- {
-  "id": "SK",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/Slovakia"
- },
- {
-  "id": "ES",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/Spain"
- },
- {
-  "id": "CH",
-  "showAsSelected": true
- },
- {
-  "id": "TR",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/Turkey"
- },
- {
-  "id": "UA",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/Ukraine"
- },
- {
-  "id": "GB",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/England"
- },
- {
-  "id": "VA",
-  "showAsSelected": true
-
- },
- {
-  "id": "BZ",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/Belize"
- },
- {
-  "id": "CA",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/Canada"
- },
- {
-  "id": "CR",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/Costa%20Rica"
- },
- {
-  "id": "DO",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/Dominican%20Republic"
- },
- {
-  "id": "MX",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/Mexico"
- },
- {
-  "id": "NI",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/Nicaragua"
- },
- {
-  "id": "LC",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/Saint%20Lucia"
- },
- {
-  "id": "US",
-  "showAsSelected": true,
-   url:"http://nietylkogory.blogspot.com/p/stany-od.html"
- },
- {
-  "id": "AR",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/Argentina"
- },
- {
-  "id": "CL",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/Chile"
- },
- {
-  "id": "CO",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/Colombia"
- },
- {
-  "id": "EC",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/Ecuador"
- },
- {
-  "id": "PE",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/Peru"
- },
- {
-  "id": "KE",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/Kenya"
- },
- {
-  "id": "MA",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/Morocco"
- },
- {
-  "id": "TZ",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/Tanzania"
- },
- {
-  "id": "KH",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/Cambodia"
- },
- {
-  "id": "CN",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/China"
- },
- {
-  "id": "IN",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/India"
- },
- {
-  "id": "IL",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/Israel"
- },
- {
-  "id": "JP",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/Japan"
- },
- {
-  "id": "JO",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/Jordan"
- },
- {
-  "id": "MY",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/Malaysia"
- },
- {
-  "id": "NP",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/Nepal"
- },
- {
-  "id": "QA",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/Qatar"
- },
- {
-  "id": "TH",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/Thailand"
- },
- {
-  "id": "AU",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/Australia"
- },
- {
-  "id": "NZ",
-  "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/New%20Zealand"
- },
-{
- "id": "PS",
- "showAsSelected": true
-},
-{
- "id": "GT",
- "showAsSelected": true,
-   url:"https://nietylkogory.blogspot.com/search/label/Guatemala"
-}
-
-]
-},
-areasSettings : {
-autoZoom : true,
-color : "#B4B4B7",
-colorSolid : "#84ADE9",
-selectedColor : "#84ADE9",
-outlineColor : "#666666",
-rollOverColor : "#9EC2F7",
-rollOverOutlineColor : "#000000"
-}
-});
-</script>
+!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>GeoRSS Layers</title>
+    <style>
+      html, body, #map-canvas {
+        height: 100%;
+        margin: 0;
+        padding: 0;      
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+    <script>
+	    
+       function getUrlParameter(name) {
+          name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+          var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+          var results = regex.exec(location.search);
+          return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        };
+	    
+        
+	function initialize() {
+	  	var myLatlng = new google.maps.LatLng(49.496675,-102.65625);
+	  	var mapOptions = {
+	    	zoom: 4,
+	    	center: myLatlng
+	  	}
+		var labelSearch;
+		labelSearch = getUrlParameter("search");		  
+	
+          
+  		var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+		var georssLayer;
+		if (labelSearch)
+		{
+			
+		   	georssLayer = new google.maps.KmlLayer({
+			url: 'http://www.blogger.com/feeds/6255727982833532507/posts/default/-/' +  labelSearch + '?max=400&max-results=400'	  		  
+	 	 	});
+		}
+		else
+		{
+			georssLayer = new google.maps.KmlLayer({
+			url: 'http://www.blogger.com/feeds/6255727982833532507/posts/default?max=400&max-results=400'	  		  
+	 		});
+		}
+		
+  		georssLayer.setMap(map);
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+  <body>
+    <div id="map-canvas"></div>
+  </body>
+</html>
